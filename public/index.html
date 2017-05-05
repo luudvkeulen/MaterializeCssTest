@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="materialize">
 <head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>MaterializeCss</title>
+
+    <!-- CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
-    <!--Let browser know website is optimized for mobile-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
@@ -29,50 +35,48 @@
                     <img src="img/mat-background.jpg"/>
                 </div>
                 <img class="circle"
-                                 src="https://placeholdit.imgix.net/~text?txtsize=12&txt=64x64&w=64&h=64"/>
+                     src="https://placeholdit.imgix.net/~text?txtsize=12&txt=64x64&w=64&h=64"/>
                 <a href="#"><span class="white-text name">John Doe</span></a>
                 <a href="#"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div>
         </li>
         <li>
-            <a href="#"><i class="material-icons">info_outline</i>Informatie</a>
+            <a href="#/"><i class="material-icons">info_outline</i>Informatie</a>
         </li>
         <li>
-            <a href="#"><i class="material-icons">list</i>Plaatsen</a>
+            <a href="#plaatsen"><i class="material-icons">list</i>Plaatsen</a>
         </li>
         <li>
-            <a href="settings"><i class="material-icons">schedule</i>Agenda</a>
+            <a href="#agenda"><i class="material-icons">schedule</i>Agenda</a>
         </li>
         <li>
-            <a href="settings"><i class="material-icons">message</i>Berichten</a>
+            <a href="#berichten"><i class="material-icons">message</i>Berichten</a>
         </li>
         <li>
             <div class="divider"></div>
         </li>
         <li>
-            <a href="settings"><i class="material-icons">settings</i>Instellingen</a>
+            <a href="#settings"><i class="material-icons">settings</i>Instellingen</a>
         </li>
         <li>
-            <a href="logout"><i class="material-icons">power_settings_new</i>Uitloggen</a>
+            <a href="#logout"><i class="material-icons">power_settings_new</i>Uitloggen</a>
         </li>
     </ul>
 </header>
 <main>
     <div class="container">
         <div class="section">
-            <div class="collection">
-                <a href="#!" class="collection-item">Alan</a>
-                <a href="#!" class="collection-item">Alan</a>
-                <a href="#!" class="collection-item">Alan</a>
-                <a href="#!" class="collection-item">Alan</a>
-            </div>
+            <div ng-view></div>
         </div>
     </div>
 </main>
 
-<!--Import jQuery before materialize.js-->
+<!-- JS -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript">
     $('.button-collapse').sideNav({
             closeOnClick: true,

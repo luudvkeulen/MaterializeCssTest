@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{jquery-3.2.1}" />
+    <file url="file://$PROJECT_DIR$" libraries="{Materialize/node_modules}" />
+    <file url="PROJECT" libraries="{Materialize/node_modules, Node.js Core Modules, angular, angular-DefinitelyTyped, angular-route, express-DefinitelyTyped, jQuery-2.0.0, jquery-3.2.1}" />
   </component>
 </project>
