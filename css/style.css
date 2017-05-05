@@ -9,15 +9,9 @@ a.button-collapse {
 nav .nav-wrapper {
     text-align: center;
 }
-    
+
 nav {
     background-color: #F44336;
-}
-
-@media only screen and (max-width: 992px) {
-    header, main, footer {
-        padding-left: 0 !important;
-    }
 }
 
 @media only screen and (min-width: 993px) {
@@ -25,10 +19,6 @@ nav {
         width: 85%;
     }
 }
-
-/*header, main, footer {
-    padding-left: 300px;
-} */
 
 .nav-wrapper a.page-title {
     font-size: 36px;
